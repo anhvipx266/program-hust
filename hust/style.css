@@ -1,0 +1,38 @@
+li{
+    padding-left: 20px;
+    color: white;
+}
+.menu{
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.option{
+    font-size: 16px;
+    color: black;
+    display: none;
+    position:absolute;
+    font-size: auto;
+}
+
+.menu:hover .option{
+    display: inline-block;
+}
+
+li:hover{
+    color:green;
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+
+.block{
+    background-color: white;
+}
