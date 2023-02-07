@@ -238,4 +238,26 @@ WHERE TenVTu LIKE 'Case%'
 GO
 
 
+RETURN 
+GO
 
+-- lệnh truy vấn theo yêu cầu 3
+SELECT * FROM DONDH d
+WHERE d.NgayDh<'10/01/2005'
+GO
+
+-- lấy tất cả CTPNHAP mà dgnhap lớn hơn 2 tr và nhỏ hơn 3 tr
+SELECT * FROM CTPNHAP c 
+WHERE c.DGNhap BETWEEN 2000000 AND 3000000
+GO
+-- lấy tất cả nhà cc mà địa chỉ ở HCM
+SELECT * FROM NHACC n 
+WHERE n.DiaChi LIKE '%HCM%'
+GO
+-- lấy tất cả vật tư mà tên có Tivi ở đầu
+SELECT * FROM VATTU v
+WHERE v.TenVTu LIKE 'TV%'
+GO
+-- lấy thông tin sô lượng hàng tồn kho nam thang, ma vat tu, tong so l nhập, ton sl xuất
+SELECT t.NamThang AS [Năm tháng],t.MaVTu AS [Mã Vật Tư],t.TongSLN AS [Tổng SLN],t.TongSLX AS [Tổng SLX] 
+FROM TONKHO t
