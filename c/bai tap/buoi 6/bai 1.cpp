@@ -46,5 +46,7 @@ int main(){
 	printf("\nUoc le lon nhat cua n la: %d",max_uoc_le);
 	if(nt)
 		printf("\nSo %d la so nguyen to!",n);
+	else
+		printf("\nSo %d khong la so nguyen to!",n);
 	getch();
 }
