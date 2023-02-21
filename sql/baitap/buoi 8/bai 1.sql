@@ -76,20 +76,19 @@ GROUP BY t.catID,c.catname,c.catID
 
 -- q8 advance
 
-
-UPDATE Categories
-SET counts = (SELECT ISNULL(COUNT(t.catID),0) FROM Travels t
-	RIGHT JOIN Categories c ON t.catID = c.catID
-	GROUP BY t.catID,c.catID
-	HAVING Categories.catID = t.catID  )
-GO
 UPDATE Categories
 SET counts = (SELECT counts FROM (SELECT c.catID AS ID,ISNULL(COUNT(t.catID),0) AS 'counts' FROM Travels t
 	RIGHT JOIN Categories c ON t.catID = c.catID
 	GROUP BY t.catID,c.catID) AS q
 	WHERE ID = Categories.catID)
 GO
+UPDATE Categories
+SET counts = (SELECT ISNULL(COUNT(t.catID),0) FROM Travels t
+	RIGHT JOIN Categories c ON t.catID = c.catID
+	GROUP BY t.catID,c.catID
+	HAVING Categories.catID = c.catID  )
+GO
+
 
 SELECT * FROM Categories
-
 
