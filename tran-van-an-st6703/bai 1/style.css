@@ -1,0 +1,29 @@
+h2{
+    margin-left: 200px;
+}
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+label{
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+}
+.sothich{
+    margin-left: 208px;
+}
+
+input{
+    border-color:aqua;
+}
+button{
+    border-color: aqua;
+}
+*{
+    margin-top:5px;
+    margin-bottom: 5px;
+    border-color: aqua;
+    border-radius: 2px;
+}

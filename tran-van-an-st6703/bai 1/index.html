@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PHIẾU ĐĂNG KÍ</title>
+</head>
+<body>
+    <form action="">
+        <h2>PHIẾU ĐĂNG KÍ</h2>
+        <label for="hoten">Họ và tên:</label>
+        <input type="text" name="hoten" required style="width:300px">(*) <br>
+        <label for="diachi">Địa chỉ:</label>
+        <input type="text" name="diachi" style="width:400px"> <br>
+        <label for="email">Email:</label>
+        <input type="email" name = "email" required style="width:300px">(*) <br>
+        <label for="giotinh">Giới tính:</label>
+        <input type="radio" name="gioitinh" id="" value="nam"> Nam 
+        <input type="radio" name="gioitinh" id="" value="nu"> Nữ <br>
+        <label for="tuoi" >Tuổi:</label>
+        <input type="number" name="tuoi" id="" required style="width:100px">(*) <br>
+        <label for="sothich">Sở thích:</label>
+        <input type="checkbox" name="sothich" id="" value="the thao"> Thể thao <br>
+        <input type="checkbox" name="sothich" id="" value="van hoc" class="sothich"> Văn học <br>
+        <input type="checkbox" name="sothich" id="" value="it" class="sothich"> Công nghệ thông tin <br>
+        <input type="checkbox" name="sothich" id="" value="lich su" class="sothich"> Lịch sử <br>
+        <input type="checkbox" name="sothich" id="" value="game" class="sothich"> Game <br>
+        <label for="chuyennganh">Chuyên ngành</label>
+         <select name="chuyennganh" id="">
+            <option value="cong nghe web">Công nghệ Web</option>
+            <option value="cong nghe ai">Công nghệ AI</option>
+            <option value="cong nghe du lieu">Công nghệ dữ liệu</option>
+        </select>
+        <br>
+        <label for="goihinh">Gởi hình:</label>
+        <input type="url" name="goihinh" id="" style="width:300px">
+        <input type="file" name="" id=""> <br>
+        <label for="yeucau">Yêu cầu:</label>
+        
+        <textarea name="yeucau" id="" style="width:350px;height: 70px;overflow-y: scroll;"></textarea> <br>
+        <button type="submit" style="margin-left:200px">Gởi thông tin</button>
+        <button type="reset">Nhập lại</button>
+    </form>
+</body>
+</html>
