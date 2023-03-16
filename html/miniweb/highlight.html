@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+       #input{
+            display: block;
+            width: 50%;
+            height: 100px;
+            /* margin: 0 auto; */
+            border: 2px solid black;
+            border-radius: 2px;
+       }
+       #btToText{
+            background-color: black;
+            color:white;
+            margin-top: 10px;
+            border: none;
+            
+       }
+       #btToText:hover{
+            background-color: green;
+       }
+       #output-text{
+            display: none;
+       }
+    </style>
+    
+</head>
+
+<body>
+    <textarea name="" id="input"></textarea>
+    <button id = "btToText">To Text</button>
+    <div id="output-text"></div>
+    <script>
+        var pword = /[^ ]{1,}/;
+        document.getElementById("btToText").addEventListener("click",function(){
+            var text = document.getElementById("input").value;
+            
+            // loc cac tu 
+            var words = text.split(" ");
+            
+            
+
+            var area = document.getElementById("output-text")
+            var write = ""
+            words.forEach(word => {
+                word = word.replace("\n","<br>");
+                write += `<span class = "word">${word}</span> `
+            });
+            area.innerHTML = write;
+            // add listen hightlight
+            var wordsx = document.getElementsByClassName("word");
+            for(var i=0; i<wordsx.length;i++){
+                var wordx = wordsx[i];
+                wordx.addEventListener('click',function() {
+                    this.style.backgroundColor = 'red';
+                });
+            }
+
+            area.style.display = "block";
+            
+        });
+    </script>
+</body>
+</html>
