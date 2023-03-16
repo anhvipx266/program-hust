@@ -21,13 +21,16 @@
             color:white;
             margin-top: 10px;
             border: none;
+            font-size: 24px;
             
        }
        #btToText:hover{
             background-color: green;
        }
        #output-text{
+            margin-top: 10px;
             display: none;
+            font-size: 28px;
        }
     </style>
     
@@ -51,7 +54,7 @@
             var write = ""
             words.forEach(word => {
                 word = word.replace("\n","<br>");
-                write += `<span class = "word">${word}</span> `
+                write += `<span class = "word">${word} </span>`
             });
             area.innerHTML = write;
             // add listen hightlight
@@ -59,7 +62,13 @@
             for(var i=0; i<wordsx.length;i++){
                 var wordx = wordsx[i];
                 wordx.addEventListener('click',function() {
-                    this.style.backgroundColor = 'red';
+                    if (this.style.backgroundColor == 'red'){
+                        this.style.backgroundColor = '';
+                    }
+                    else{
+                        this.style.backgroundColor = 'red';
+                    }
+                    
                 });
             }
 
