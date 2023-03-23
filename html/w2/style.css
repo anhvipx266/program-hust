@@ -1,0 +1,90 @@
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-weight: bold;
+}
+h2 p{
+    font-weight: normal;
+}
+.header{
+    height: 70px;
+    border: 3px solid wheat;
+}
+.header > img{
+    height: 70px ;
+    
+}
+.header a{
+    color:chocolate;
+    text-decoration: none;
+    height: 100%;
+    font-weight: bold;
+}
+.header a:hover{
+    color:black;
+}
+.logo-icon{
+    height: 70px;
+}
+.logo{
+    height: 70px;
+}
+.logo-large{
+    width: 100%;
+    height: auto;
+}
+p{
+    font-size: 16px;
+}
+.card-div div{
+    background-image: linear-gradient(to right, orange, yellow);
+    padding: 10px;
+    border: 10px solid white;
+}
+.content img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    padding: 8px;
+}
+.content p{
+    font-size: 12px;
+}
+.content h2{
+    font-size: 16px;
+}
+.button{
+    width: 100%;
+}
+.aside-item img{
+    width: 40%;
+    height: auto;
+    float: left;
+}
+.tag-list{
+    display: flex;
+    align-items: space-around;
+    justify-items:flex-start;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.tag{
+    display: inline-block;
+    border: 2px solid orange;
+    border-radius: 3px;
+
+}
+.card-div a{
+    display: inline-flex;
+    justify-content: center;
+    justify-items: center;
+}
+/* .card-body{
+    width: 80%;
+} */
+.footer{
+    padding-left: 200px;
+}
