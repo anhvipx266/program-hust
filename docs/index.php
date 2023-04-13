@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Trang github trong quá trình học lập trình</h1>
+    <?php echo "Test" ?>
 </body>
 </html>
