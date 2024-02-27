@@ -8,3 +8,11 @@ SQL - [demo](https://drive.google.com/drive/folders/1vGnnhMsUcUv0XPcKTuAobu-VHEu
 [PHP](https://drive.google.com/drive/mobile/folders/1AE-jV7q-9fdS9ZpzUCqWZlLmc0BIxSO1?usp=share_link)
 [SQL2 demo](https://drive.google.com/drive/folders/1RWWOtJSn2dA___ZD3HAyFyn1BTSSrcAq?usp=drive_link)\
 [SQL2](https://drive.google.com/drive/folders/16hYgos7CK-izNliJM4gqrkMLQcQg-bwe?usp=drive_link)
+1. Thư viện Java JDK
+	https://drive.google.com/drive/folders/1MACC7HNh9NKgIKyVvy8EeG5mW3y3zR-v?usp=drive_link
+2. Công cụ Android Studio (công cụ)
+3. Thư viện Android SDK
+	https://drive.google.com/drive/folders/1jYaNvoaqbdK9fM1Le3OhDoy4iatY7jZR?usp=drive_link
+
+Thư mục Demo:
+	https://drive.google.com/drive/folders/1brRFsxXge9-wbjh4Ck0vJ68806S9V4JN?usp=sharing
